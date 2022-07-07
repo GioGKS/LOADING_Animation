@@ -1,0 +1,32 @@
+
+
+body{
+    background: #1a1a1a;
+}
+
+.loading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 200px;
+    margin: 20% auto;
+}
+
+.loading div{
+    height: 20px;
+    width: 100%;
+    margin: 0 2px;
+    background: purple;
+    text-align: center;
+    color: #220a1c;
+    animation: 5s infinite jump;
+}
+
+.loading div:nth-child(even){
+    animation-delay: 1s;
+}
+
+@keyframes jump{
+ 50% {height: 50px; background: violet;}
+}
